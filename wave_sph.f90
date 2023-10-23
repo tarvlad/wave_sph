@@ -1,17 +1,17 @@
 module constants
 implicit none
 real, parameter :: pi = acos(-1.0)
-real, parameter  :: rho_0 = 1.0
-real, parameter  :: delta = 1.0 / (10.0**3)
-real, parameter  :: cs = 1.0
+real, parameter :: rho_0 = 1.0
+real, parameter :: delta = 1.0 / (10.0**3)
+real, parameter :: cs = 1.0
 real, parameter :: l_bound = -0.7
-real, parameter  :: r_bound = 1.7
-integer, parameter  :: n_particles_per_unit_side = 100
-real, parameter  :: h = 0.1
-real, parameter  :: time_moment = 1.0
-real, parameter  :: tau = 0.00001
-real, parameter  :: k = 2 * pi
-real, parameter  :: m_g = rho_0 / n_particles_per_unit_side
+real, parameter :: r_bound = 1.7
+integer, parameter :: n_particles_per_unit_side = 100
+real, parameter :: h = 0.1
+real, parameter :: time_moment = 1.0
+real, parameter :: tau = 0.00001
+real, parameter :: k = 2 * pi
+real, parameter :: m_g = rho_0 / n_particles_per_unit_side
 integer, parameter :: n_g = n_particles_per_unit_side * (r_bound - l_bound)
 
 end module constants

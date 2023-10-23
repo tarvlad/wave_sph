@@ -50,11 +50,11 @@ if __name__ == '__main__':
         [i[0] for i in data_v], [i[1] for i in data_v],
         [i[0] for i in data_v], [i[2] for i in data_v]
     )
-    plt.savefig('v.png')
+    plt.savefig(sys.argv[3])
     plt.clf()
 
     plt.plot(
         [i[0] for i in data_rho], [i[1] for i in data_rho],
         [i[0] for i in data_rho], [i[2] for i in data_rho]
     )
-    plt.savefig('rho.png')
+    plt.savefig(sys.argv[4])
