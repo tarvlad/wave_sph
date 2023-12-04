@@ -1,0 +1,19 @@
+#pragma once
+
+
+enum KERNEL_TYPE {
+    C4O2,
+    C4O4,
+    C6O2,
+    C6O4
+};
+
+
+enum RUNTIME_DENSITY_COMP_SCHEME {
+    SCHEME_16_SARANSK
+};
+
+
+enum RUNTIME_VELOCITY_COMP_SCHEME {
+    DIRECT_PRESSURE_GRAD_APPROX
+};
