@@ -8,19 +8,19 @@ constexpr double PI = 3.1415926535897931l;
 
 
 // Request params
-constexpr double rho0 = 1.l;
-constexpr double delta = 1e-3l;
-constexpr double cs = 1.l;
-constexpr double extra_border = 75e-2;
+constexpr double rho0 = 1;
+constexpr double delta = 1e-3;
+constexpr double cs = 1;
+constexpr double extra_border = 2e0;
 constexpr double l_bound = -extra_border;
-constexpr double r_bound = 1.l + extra_border;
+constexpr double r_bound = 1 + extra_border;
 constexpr size_t n_gas_particles_per_unit = 83;
 constexpr double h = 6e-1;
-constexpr double time_moment = 2e0;
-constexpr double tau = 1e-5L;
-constexpr double k = 2e0l * PI;
+constexpr double time_moment = 5e-1;
+constexpr double tau = 1e-5;
+constexpr double k = 2e0 * PI;
 constexpr double m_g = rho0 / n_gas_particles_per_unit;
-constexpr KERNEL_TYPE kernel_type = C6O4;
+constexpr KERNEL_TYPE kernel_type = C4O4;
 constexpr size_t n_particles = static_cast<size_t>(
     __c_ceil(n_gas_particles_per_unit * (r_bound - l_bound))
 );
