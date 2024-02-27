@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef UNIX
+#ifdef __linux__
 #define CLR_SCREEN system("clear");
 #endif
 #ifdef _WIN32
